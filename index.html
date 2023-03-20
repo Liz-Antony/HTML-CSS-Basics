@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ div.relative {
+   box-shadow:4px 4px 4px 4px red;
+    border-radius: 10px;
+  position: relative;
+  inset-block-start:0px;
+  inset-inline-start:0px;
+  inline-size: 300px;
+  block-size: 300px;
+  border: 5px solid #73AD21;
+} 
+
+div.image{
+ box-shadow:4px 4px 4px 4px red;
+    border-radius: 10px;
+  position: relative;
+  inset-block-start:0px;
+  inset-inline-start:0px;
+  inline-size: 300px;
+  block-size: 300px;
+  border: 5px solid #73AD21;
+  Z-index:1;
+}
+
+div.absolute {
+  background:lightslategrey;
+  position: relative;
+  inset-block-start:150px;
+   
+  inline-size: 300px;
+  block-size: 300px;
+  border: 10px solid #73AD21;
+  border-radius:10px 75px 75px 0px;
+  font-size:30px;
+}
+div.center{
+   background:hsl(330, 50%, 47%);
+   border-radius: 25px;
+  position: absolute;
+  inset-block-start:200px;
+  inset-block-end:40px;
+  inset-inline-end:50px;
+  inset-inline-start:200px;
+  inline-size: 500px;
+  block-size:400px;
+  border: 10px solid #73AD21;
+  Z-index:-1;
+   box-shadow:4px 4px 4px 4px red;
+  
+  }
+   p{
+ padding:65px 25px 0px 0px;
+ font-size:30px;
+  text-align:center;
+ }
+  div.table{
+     position: absolute;
+     inset-block-end:625px;
+     inset-inline-start:600px;
+     
+      inline-size: 800px;
+      block-size: 400px;
+  
+   border-radius:15px;
+   border: 10px solid #73AD21;
+   background:lightgreen;
+   position:relative;
+  
+   }
+  table, td, th {
+  border: 1px solid black;
+  
+}
+
+table {
+  border-collapse: collapse;
+  inline-size: 100%;
+}
+
+td {
+  text-align: center;
+}
+ul{
+list-style-image:url(C:\Users\eliza\OneDrive\Desktop\Assignment#2\images.html)
+}
+</style>
+
+</head>
+<body>
+<div class="relative">
+<div class="Image"> 
+<img src = "https://www.tutorialspoint.com/html5/images/html5-mini-logo.jpg"
+      alt = "Learn HTML5" height = "300"width = "300"/>
+</div> 
+
+<div class="absolute">
+<h4>List of HTML/CSS Resources</h4>
+<ul>
+<li><img src = "https://www.tutorialspoint.com/html5/images/html5-mini-logo.jpg"
+      alt = "Learn HTML5" height = "30"width = "30"/><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute"> Resouce#1 Link</a></img></li>
+<li> <img src = "https://www.tutorialspoint.com/html5/images/html5-mini-logo.jpg"
+      alt = "Learn HTML5" height = "30"width = "30"/><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Resource#2 Link</a></li>
+<li> <img src = "https://www.tutorialspoint.com/html5/images/html5-mini-logo.jpg"
+      alt = "Learn HTML5" height = "30"width = "30"/><a href="https://www.w3schools.com/css/css_border_rounded.asp">Resource#3 Link</a></li>
+<li> <img src = "https://www.tutorialspoint.com/html5/images/html5-mini-logo.jpg"
+      alt = "Learn HTML5" height = "30"width = "30"/><a href="https://www.w3schools.com/css/css_padding.asp">Resource#4 Link</a></li>
+</ul>
+</div>
+<div class="center"><p>Elizabeth Antony<br></p></div>
+<div class="table">
+<table>
+        <thead>
+            <tr rowspanspan="3">
+                <th>HTML</th>
+            </tr>
+            <tr>
+                <th>Tag</th>
+                <th>Example</th>
+                <th>What it does</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lta&gt</td>
+                <td>&lta href="filename.html target="_blank></td>
+                <td>Creates a link ta a file that opens in a new page </td>
+            </tr>
+            <tr>
+                <td>&ltbr></td>
+                <td>&ltbr></td>
+                <td>For Break</td>
+            </tr>
+            <tr>
+                <td>&lth1></td>
+                <td>&lth1>Welcome</h1></td>
+                <td>For titles</td>
+            </tr>
+            <tr>
+                <td>&lti></td>
+                <td>&lti>How are you&lt/i></td>
+                <td>To make italic text</td>
+            </tr>
+            <tr>
+                <td>&ltol></td>
+                <td>
+                &ltol>
+                &ltli>Html&lt/li><br>
+                &ltli>Java&lt/li>
+                &lt/ol>
+                </td>
+                <td>To make ordered list</td>
+            </tr>
+            
+             <tr> <td><b>CSSAttributes</b></td> </tr>
+            <tr>
+            <td><b>Style</b></td>
+            <td><b>Example</b></td>
+            <td><b>What it does</b></td>
+            </tr>
+           
+              <tr>
+                <td>border-collapse</td>
+                <td>border-collapse:collapse</td>
+                <td>Combine adjacent borders lines in to one </td>
+            </tr>
+            <tr>
+                <td>Padding</td>
+                <td>padding: 25px 50px 75px 100px;</td>
+                <td>To generate space around an element's content,inside of any defined borders</td>
+            </tr>
+            <tr>
+                <td>CSS box model</td>
+                <td>inline-size: 320px;
+                    padding: 10px;
+                    border: 5px solid gray;
+                    margin: 0;
+                </td>
+                <td> Wraps every HTML element</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>background-color:DodgerBlue;</td>
+                <td>To set the background color </td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td> float: inline-end;</td>
+                <td>Assign how an element should float</td>
+            </tr>
+             
+              </tbody>
+        
+    </table>
+    </div>
+    </div>
+
+</body>
+</html>
+
